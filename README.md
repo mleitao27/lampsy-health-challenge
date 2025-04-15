@@ -37,6 +37,11 @@ This is a very simple page with mock settings. However, the "Enter/Exit privacy 
 These should be used to navigate between the 3 screens mentioned above.
 
 ## Code
+The app was developed using React Native + Expo. The main files edited are the following:
+
+- The layouts and pages in the **lampsy-health-challenge/my-app/app** directory
+- The components in the **lampsy-health-challenge/my-app/components** directory
+
 ## Setup
 1 - Install git
 
