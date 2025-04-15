@@ -2,7 +2,7 @@ import React from 'react';
 import { Text, StyleSheet, View, Dimensions } from "react-native";
 import { BarChart } from 'react-native-chart-kit';
 
-
+// Mock statistics chart using react-native-chart-kit
 const History = () => {
     const screenWidth = Dimensions.get('window').width - 48;
 
@@ -36,7 +36,7 @@ const History = () => {
                     labelColor: (opacity = 1) => `rgba(0, 0, 0, ${opacity})`,
                     propsForBackgroundLines: {
                         stroke: 'transparent', // Hides background grid lines
-                      },
+                    },
                 }}
                 style={{
                     marginVertical: 16,

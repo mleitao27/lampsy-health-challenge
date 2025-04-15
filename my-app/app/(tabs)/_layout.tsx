@@ -2,6 +2,7 @@ import { Tabs } from 'expo-router';
 import { Platform, View } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 
+// Tab menu for navigation between the different screens
 export default function TabLayout() {
   return (
       <Tabs screenOptions={{

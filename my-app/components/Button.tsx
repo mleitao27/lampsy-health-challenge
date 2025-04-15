@@ -2,16 +2,17 @@ import React from 'react';
 import { Text, StyleSheet, TouchableOpacity } from "react-native";
 
 type ButtonProps = {
-    text: string;
-    onPress: () => void;
+    text: string; // Prop to pass the button text
+    onPress: () => void; // Prop to pass button action
 };
 
+// Custom button component
 const Button: React.FC<ButtonProps> = ({text, onPress}) => {
 
     return (
         <TouchableOpacity style={styles.container} onPress={onPress}>
             <Text style={{color: '#f1f1f1', fontSize: 16}}>
-            {text}
+                {text}
             </Text>
         </TouchableOpacity>
     );

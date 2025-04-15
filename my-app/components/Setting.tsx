@@ -2,11 +2,19 @@ import { Text, View, StyleSheet, TouchableOpacity } from "react-native";
 import { Ionicons } from '@expo/vector-icons';
 
 type SettingProps = {
-    text: string;
-    onPress?: () =>void;
-    icon: 'person-outline' | 'shield-half-outline' | 'videocam-outline' | 'videocam-off-outline' | 'language-outline' | 'notifications-outline' | 'help-buoy-outline' | 'log-out-outline';
+    text: string; // Prop to pass the menu item text
+    onPress?: () =>void; // Prop to pass click action
+    icon: 'person-outline' | // Prop to pass icon to be displayed
+          'shield-half-outline' | 
+          'videocam-outline' | 
+          'videocam-off-outline' | 
+          'language-outline' | 
+          'notifications-outline' | 
+          'help-buoy-outline' | 
+          'log-out-outline';
 };
 
+// Reusable settings menu item component
 const Setting: React.FC<SettingProps> = ({text, icon, onPress}) => {  
     return (
     <TouchableOpacity style={styles.container} onPress={onPress}>
