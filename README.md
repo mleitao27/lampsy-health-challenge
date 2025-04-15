@@ -61,4 +61,4 @@ npm i
 ```
 npx expo start
 ```
-7 - Scan QR code displayed on the terminal
+7 - Install Expo mobile app and scan QR code displayed on the terminal
