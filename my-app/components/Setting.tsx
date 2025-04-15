@@ -1,19 +1,20 @@
-import { Text, View, StyleSheet } from "react-native";
+import { Text, View, StyleSheet, TouchableOpacity } from "react-native";
 import { Ionicons } from '@expo/vector-icons';
 
 type SettingProps = {
     text: string;
-    icon: 'person-outline' | 'shield-half-outline' | 'videocam-outline' | 'language-outline' | 'notifications-outline' | 'help-buoy-outline' | 'log-out-outline';
+    onPress?: () =>void;
+    icon: 'person-outline' | 'shield-half-outline' | 'videocam-outline' | 'videocam-off-outline' | 'language-outline' | 'notifications-outline' | 'help-buoy-outline' | 'log-out-outline';
 };
 
-const Setting: React.FC<SettingProps> = ({text, icon}) => {  
+const Setting: React.FC<SettingProps> = ({text, icon, onPress}) => {  
     return (
-    <View style={styles.container}>
+    <TouchableOpacity style={styles.container} onPress={onPress}>
         <View style={styles.border}>
             <Ionicons name={icon} size={22} color={'#424242'} />
         </View>
         <Text style={{fontSize: 16, width: "100%", marginLeft: 16, color: '#424242'}}>{text}</Text>
-    </View>
+    </TouchableOpacity>
   );
 }
 

@@ -1,7 +1,10 @@
 import { Text, StyleSheet, ScrollView, SafeAreaView } from "react-native";
 import Setting from "@/components/Setting";
+import React, { useState } from 'react';
 
 export default function Settings() {
+  const [privacy, setPrivacy] = useState(false);
+  
   return (
     <SafeAreaView style={{flex: 1}}>
       <ScrollView style={styles.container}>
@@ -10,7 +13,11 @@ export default function Settings() {
         </Text>
         <Setting text="Personal information" icon="person-outline"/>
         <Setting text="Change password" icon="shield-half-outline"/>
-        <Setting text="Video settings" icon="videocam-outline"/>
+        <Setting 
+          onPress={() =>setPrivacy(!privacy)}
+          text={privacy ? 'Exit privacy mode' : 'Enter privacy mode'} 
+          icon={privacy ? 'videocam-off-outline' : 'videocam-outline'}
+        />
         <Setting text="Language" icon="language-outline"/>
         <Setting text="Notification preferences" icon="notifications-outline"/>
         <Setting text="Help" icon="help-buoy-outline"/>
