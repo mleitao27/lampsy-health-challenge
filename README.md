@@ -2,6 +2,7 @@
 ## Overview
 The app has 3 screens:
 1 - The home screen
+<img src="https://github.com/user-attachments/assets/330e5227-b8f0-4cdb-8c6d-9cb97f403994" width="300" />
 ![IMG_4864](https://github.com/user-attachments/assets/330e5227-b8f0-4cdb-8c6d-9cb97f403994)
 2 - Live stream screen
 ![IMG_4865](https://github.com/user-attachments/assets/9a1813d0-38d7-48a2-8423-153fd4bae77e)
