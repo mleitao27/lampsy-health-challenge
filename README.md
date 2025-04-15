@@ -1,8 +1,11 @@
 # lampsy-health-challenge
 ## Setup
 1 - Install git
+
 2 - Install node
+
 3 - Clone repo
+
 4 - Enter my-app directory
 ```
 cd my-app
