@@ -62,4 +62,3 @@ npm i
 npx expo start
 ```
 7 - Scan QR code displayed on the terminal
-## Notes
