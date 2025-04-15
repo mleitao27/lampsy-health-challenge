@@ -20,9 +20,15 @@ Below the chart we can find the "Send notification" button that should trigger a
 
 <img src="https://github.com/user-attachments/assets/9a1813d0-38d7-48a2-8423-153fd4bae77e" width="300" />
 
+Here was integrated a live stream from Twitch, resorting to WebView to simulate the page dedicated to displaying the live video being captured by the hardware. The type of connection and component used to display the video may change depending on how the video hosting/streaming is being done. 
+
 3 - Settings screen
 
 <img src="https://github.com/user-attachments/assets/de06c1d6-7141-4b46-b5d5-5a48931a241f" width="300" />
+
+This is a very simple page with mock settings. However, the "Enter/Exit privacy mode" is clickable and should toggle using very simple state management.
+
+<img width="349" alt="Screenshot 2025-04-15 at 01 46 26" src="https://github.com/user-attachments/assets/36ae2988-30c7-46c7-b333-ece36ff5ba67" />
 
 4 - The navigation tabs
 
